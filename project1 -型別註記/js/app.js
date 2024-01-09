@@ -38,3 +38,12 @@ let nestedObject = {
 let obj1 = { hello: "World" };
 let obj2 = Object.assign(Object.assign({}, obj1), { goodbye: "Cruel World" });
 console.log(obj2);
+let obj3 = { hello: "Another World" };
+let obj4 = Object.assign(obj3, {
+    goodbye: "Cruel World",
+});
+if (typeof document !== "undefined") {
+    const myElement = document.getElementById("myElement");
+    myElement.textContent = "新的文本內容";
+    myElement.classList.add("newClass");
+}

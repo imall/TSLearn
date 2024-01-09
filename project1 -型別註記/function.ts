@@ -36,3 +36,38 @@ const GetReview = (title: string): string | number => {
 function PrintMovieInfo(author: string): string[] {
   return ["Vue Book"];
 }
+
+// // 註記為 object，只能接受 object 類型的值
+// let justAnObject: object = {
+//   hello: "World",
+// };
+// justAnObject = {
+//   goodbye: "W",
+// };
+// justAnObject = [];
+// justAnObject = function () {};
+// justAnObject = new Map();
+// justAnObject = new String("test");
+// justAnObject = ";;;;";
+// justAnObject = 123;
+// justAnObject = null;
+// justAnObject.app = "test"; // 會報錯
+// justAnObject.hello = "test";
+
+// // 函式的複寫
+// let addition = function (p: number, q: number) {
+//   return p + q;
+// };
+// addition = function (a: number, b: number) {
+//   return a + b;
+// };
+
+// // 型別錯誤
+// addition = function (a: string, b: string): string {
+//   return "666";
+// };
+
+// // 回傳值錯誤
+// addition = function (p: number, q: number) {
+//   p + q;
+// };
