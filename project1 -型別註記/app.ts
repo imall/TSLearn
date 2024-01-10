@@ -83,11 +83,11 @@ let powerOp: functionType = function (r, w) {
   return r ** w;
 };
 
-type PersonInfo = {
+interface PersonInfo {
   name: string;
   age: number;
   hasPet: boolean;
-};
+}
 
 function printInfo(info: PersonInfo) {
   console.log(info.name);
