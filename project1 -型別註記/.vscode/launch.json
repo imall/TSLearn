@@ -9,8 +9,8 @@
       "request": "launch",
       "name": "啟動程式",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/js/app.js",
-      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "program": "./js/app.js",
+      "outFiles": ["./**/*.js"],
       "preLaunchTask": "Compile TypeScript",
       "internalConsoleOptions": "openOnSessionStart"
     }

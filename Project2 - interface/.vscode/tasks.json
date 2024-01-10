@@ -6,7 +6,7 @@
     {
       "label": "Compile TypeScript",
       "type": "shell",
-      "command": "tsc",
+      "command": "tsc -w",
       "presentation": {
         "echo": false,
         "reveal": "silent",
@@ -14,6 +14,16 @@
         "panel": "shared",
         "showReuseMessage": false,
         "clear": false
+      }
+    },
+    {
+      "label": "stopTypeScriptWatch",
+      "type": "shell",
+      "command": "pkill",
+      "args": ["-f", "tsc -w"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
       }
     }
   ]

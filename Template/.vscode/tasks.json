@@ -6,7 +6,7 @@
     {
       "label": "Compile TypeScript",
       "type": "shell",
-      "command": "tsc",
+      "command": "tsc -w",
       "presentation": {
         "echo": false,
         "reveal": "silent",
