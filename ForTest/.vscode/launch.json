@@ -10,8 +10,10 @@
       "name": "啟動程式",
       "skipFiles": ["<node_internals>/**"],
       // "program": "./js/index.js",
+      // "program": "${workspaceFolder}/js/app.js",
+      // "outFiles": ["${workspaceFolder}/**/*.js"],
       "program": "${fileDirname}/js/${fileBasenameNoExtension}.js",
-      // "outFiles": ["./**/*.js"],
+      "outFiles": ["./**/*.js"],
       "preLaunchTask": "Compile TypeScript",
       "internalConsoleOptions": "openOnSessionStart"
     }
