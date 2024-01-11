@@ -1,3 +1,5 @@
+const app = "ks666";
+
 const button = document.querySelector("button")!;
 const input1 = document.getElementById("num1")! as HTMLInputElement;
 const input2 = document.getElementById("num2")! as HTMLInputElement;
@@ -16,18 +18,26 @@ button.addEventListener("click", function () {
 const number1 = 5;
 const number2 = 2.8;
 const showresult = false;
-console.log("65666");
+console.log("6568866");
 
-const result = add(number1, number2);
+const fun = () => {
+  console.log("fun");
+};
 
-// const res = add(number1, number2, showresult);
-console.log(result);
+document.querySelector("button")!.addEventListener("click", fun);
 
-const arr = ["a", "b", 1];
-const tupleExample: [string, number, boolean] = ["Hello", 123, true];
+// const result = add(number1, number2);
 
-const ADMIN = "ADMIN";
-const READ_ONLY = 1;
-const AUTHOR = 2;
+// // const res = add(number1, number2, showresult);
+// console.log(result);
 
-console.log("testtttt");
+// const arr = ["a", "b", 1];
+// const tupleExample: [string, number, boolean] = ["Hello", 123, true];
+
+// const ADMIN = "ADMI";
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+
+// console.log(app);
+
+// console.log("testtttt");

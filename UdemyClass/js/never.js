@@ -1,2 +1,2 @@
 "use strict";
-console.log("never.ts");
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmV2ZXIuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvbmV2ZXIudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9
