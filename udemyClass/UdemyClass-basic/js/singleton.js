@@ -1,0 +1,21 @@
+export class Singleton {
+    id;
+    name;
+    static instance;
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    static getInstance(id, name) {
+        if (!Singleton.instance) {
+            Singleton.instance = new Singleton(id, name);
+        }
+        return Singleton.instance;
+    }
+    describe() {
+        console.log(this.id + this.name);
+    }
+}
+const singleton = Singleton.getInstance("666", "這是新溝頓");
+singleton.describe();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2luZ2xldG9uLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL3NpbmdsZXRvbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxNQUFNLE9BQU8sU0FBUztJQUNaLEVBQUUsQ0FBUztJQUNYLElBQUksQ0FBUztJQUNiLE1BQU0sQ0FBQyxRQUFRLENBQVk7SUFDbkMsWUFBb0IsRUFBVSxFQUFFLElBQVk7UUFDMUMsSUFBSSxDQUFDLEVBQUUsR0FBRyxFQUFFLENBQUM7UUFDYixJQUFJLENBQUMsSUFBSSxHQUFHLElBQUksQ0FBQztJQUNuQixDQUFDO0lBRUQsTUFBTSxDQUFDLFdBQVcsQ0FBQyxFQUFVLEVBQUUsSUFBWTtRQUN6QyxJQUFJLENBQUMsU0FBUyxDQUFDLFFBQVEsRUFBRTtZQUN2QixTQUFTLENBQUMsUUFBUSxHQUFHLElBQUksU0FBUyxDQUFDLEVBQUUsRUFBRSxJQUFJLENBQUMsQ0FBQztTQUM5QztRQUNELE9BQU8sU0FBUyxDQUFDLFFBQVEsQ0FBQztJQUM1QixDQUFDO0lBRUQsUUFBUTtRQUNOLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLEVBQUUsR0FBRyxJQUFJLENBQUMsSUFBSSxDQUFDLENBQUM7SUFDbkMsQ0FBQztDQUNGO0FBRUQsTUFBTSxTQUFTLEdBQUcsU0FBUyxDQUFDLFdBQVcsQ0FBQyxLQUFLLEVBQUUsT0FBTyxDQUFDLENBQUM7QUFDeEQsU0FBUyxDQUFDLFFBQVEsRUFBRSxDQUFDIn0=
